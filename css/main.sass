@@ -1,0 +1,129 @@
+// YEBO
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,700&display=swap')
+*,*::before,*::after
+  margin: 0
+  padding: 0
+body
+  font-family: sans-serif
+html
+  overflow-x: hidden
+
+
+header
+  background: url(../img/bg.png) no-repeat top center/cover
+  width: 100%
+  height: 100vh
+  position: absolute
+  z-index: 50
+  .header_logo
+    position: absolute
+    left: 50%
+    top: 35px
+    transform: translate(-50%, 0)
+    // margin-top: 35px
+    // text-align: center
+  nav
+    text-align: center
+    padding-top: 68px
+    transition: all .3s ease 0s
+    li
+      list-style-type: none
+      transition: all .3s ease 0s
+      display: inline-block
+      &:first-child
+        padding-right: 70px
+      &:nth-child(2)
+        padding-right: 110px
+      &:nth-child(3)
+        padding-left: 110px
+      &:last-child
+        padding-left: 70px
+      text-transform: uppercase
+      font-weight: 700
+      font-family: Lato
+      color: #4d4959
+      font-size: 13px
+
+.header__burger
+  display: none
+
+.header__burger.active
+  margin-top: 68px
+  &::before
+    transform: rotate(45deg)
+    top: 9px
+  &::after
+    transform: rotate(-45deg)
+    top: 9px
+  span
+    transform: scale(0)
+
+@media (max-width:768px)
+  .header__burger
+    margin: 0 10% 0 auto
+    display: block
+    position: relative
+    width: 30px
+    height: 20px
+    &::after, &::before
+      content: ""
+      width: 100%
+      height: 2px
+      position: absolute
+      left: 0
+      background-color: #64c29e
+      transition: all .3s ease 0s
+    &::after
+      top: 0
+    &::before
+      bottom: 0
+    span
+      position: absolute
+      background-color: #64c29e
+      width: 100%
+      left: 0
+      top: 9px
+      height: 2px
+      transition: all .3s ease 0s
+
+
+  li
+    display: none!important
+
+nav.active
+  display: block
+  position: absolute
+  width: 100%
+  background-color: #222429
+  height: 100vh
+  transition: all .3s ease 0s
+  li
+    color: #f7f7f7!important
+    font-size: 20px!important
+    padding: 0!important
+    display: block!important
+    transition: all .3s ease 0s
+    margin-top: 50px
+    &:first-child
+      margin-top: 100px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //
