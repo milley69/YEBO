@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/main.min.css" type="text/css">
   <title>Document</title>
 </head>
@@ -12,18 +14,73 @@
 <body>
   <header>
     <nav>
-      <li>about us</li>
-      <li>work</li>
-      <li>shop</li>
-      <li>contact</li>
+      <a href="#" onclick="slowScroll('#about')">about us</a>
+      <a href="#" onclick="slowScroll('#twitter')">twitter</a>
+      <a href="#" onclick="slowScroll('#shop')">shop</a>
+      <a href="#" onclick="slowScroll('#mailing')">contact</a>
     </nav>
-    <div class="header_logo"><img src="img/logo.png" alt="logo"></div>
+    <div class="header_logo"><img src="https://raw.githubusercontent.com/milley69/YEBO/master/img/logo.png" alt="logo"></div>
     <div class="header__burger">
       <div class="header__menu"></div>
       <span></span>
     </div>
   </header>
+
+  <section id="about">
+    <img src="img/about_icon.png" alt="icon">
+    <h3>A NEW GENERATION OF VINTAGE BIKE</h3>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+      book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
+  </section>
+
+  <!-- <section id="works">
+    <div class="brand_first">
+      <div class="two_of_three">
+        <a href="#"><img src="img/logo/logo1.png" alt=""></a>
+        <img src="img/works/bg1.png" alt="">
+      </div>
+      <div class="one_of_three">
+        <div class="brand_text">
+          <img src="img/logo/icon/icon1.png" alt="">
+          <h3>vintage Oliva</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived.</p>
+        </div>
+        <div class="brand_text_img">
+          <img src="img/works/bg12.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section id="twitter">
+    <div class="owl-carousel owl-theme">
+      <div>
+        <img src="img/twitter.png" alt="twitter">
+        <h1>AOD New York  @aod  </h1> <span>/  35 min</span>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</h2>
+      </div>
+      <div>
+        <img src="img/twitter.png" alt="twitter">
+        <h1>AOD New York  @aod  </h1> <span>/  52 min</span>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet</h2>
+      </div>
+      <div>
+        <img src="img/twitter.png" alt="twitter">
+        <h1>AOD New York  @aod  </h1> <span>/  1 hour</span>
+        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut tellus ac nulla semper rhoncus. Nullam a odio porttitor, dictum turpis vitae, pretium ante amet.</h2>
+      </div>
+    </div>
+  </section>
+
+  <section id="qq"></section>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" charset="utf-8"></script> -->
+  <script src="js/main.js" charset="utf-8"></script>
+
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" charset="utf-8"></script>
-<script src="js/main.js" charset="utf-8"></script>
+
 </html>

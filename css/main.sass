@@ -13,7 +13,6 @@ header
   background: url(../img/bg.png) no-repeat top center/cover
   width: 100%
   height: 100vh
-  position: absolute
   z-index: 50
   .header_logo
     position: absolute
@@ -25,9 +24,9 @@ header
   nav
     text-align: center
     padding-top: 68px
-    transition: all .3s ease 0s
-    li
-      list-style-type: none
+    // transition: all .3s ease 0s
+    a
+      text-decoration: none
       transition: all .3s ease 0s
       display: inline-block
       &:first-child
@@ -43,12 +42,14 @@ header
       font-family: Lato
       color: #4d4959
       font-size: 13px
+      &:hover
+        color: #64c29e
 
 .header__burger
   display: none
 
 .header__burger.active
-  margin-top: 68px
+  top: 69px
   &::before
     transform: rotate(45deg)
     top: 9px
@@ -59,6 +60,8 @@ header
     transform: scale(0)
 
 @media (max-width:768px)
+  body.lock
+    overflow: hidden
   .header__burger
     margin: 0 10% 0 auto
     display: block
@@ -87,7 +90,7 @@ header
       transition: all .3s ease 0s
 
 
-  li
+  a
     display: none!important
 
 nav.active
@@ -96,13 +99,14 @@ nav.active
   width: 100%
   background-color: #222429
   height: 100vh
+  overflow: auto
   transition: all .3s ease 0s
-  li
+  a
     color: #f7f7f7!important
     font-size: 20px!important
     padding: 0!important
     display: block!important
-    transition: all .3s ease 0s
+    transition: all 1s ease 1s
     margin-top: 50px
     &:first-child
       margin-top: 100px
@@ -111,12 +115,155 @@ nav.active
 
 
 
+#about
+  text-align: center
+  height: 469px
+  background-color: #f7f7f7
+  img
+    padding-top: 117px
+  h3
+    color: #353738
+    font-family: Lato
+    font-size: 18px
+    font-weight: 700
+    text-transform: uppercase
+    letter-spacing: 3.6px
+    padding: 34px 0 35px
+  p
+    color: #848789
+    font-family: Lato
+    font-size: 18px
+    font-weight: 400
+    line-height: 34px
+    max-width: 1020px
+    text-align: center
+    margin: 0 auto
+    padding: 0 20px
+@media (max-width:768px)
+  #about
+    img
+      padding-top: 80px
+    p
+      font-size: 16px
+@media (max-width:425px)
+  #about
+    img
+      padding-top: 60px
+    p
+      font-size: 14px
+      line-height: 24px
 
 
 
+// works
+
+// #works
+//   background-color: #ffffff
+//
+// .brand_first
+//   // display: grid
+//   // grid-template-columns: 66.6667% 33.3333%
+//   display: flex
+//
+//   .two_of_three
+//     flex: 0 1 66.667%
+//   .one_of_three
+//     flex: 0 1 33.333%
+//     .brand_text
+//       margin: 0 auto
+//       text-align: center
+//       img
+//         padding: 70px 0 0 0
+//       h3
+//         color: #353738
+//         font-family: Lato
+//         font-size: 18px
+//         font-weight: 700
+//         text-transform: uppercase
+//         letter-spacing: 3.6px
+//         padding: 31px 0 26px
+//       p
+//         margin: 0 auto
+//         text-align: justify
+//         color: #848789
+//         font-family: Lato
+//         font-size: 16px
+//         font-weight: 400
+//         line-height: 30px
+//         max-width: 380px
+//         padding: 0 10px
 
 
 
+// twitter
+
+
+#twitter
+  text-align: center
+  margin: 0 auto
+  max-width: 1100px
+  img
+    margin: 120px auto 0
+    width: 32px
+    text-align: center
+  h1
+    display: inline-block
+    color: #353738
+    font-family: Lato
+    font-size: 18px
+    font-weight: 700
+    margin: 37px auto 27px
+  span
+    color: #848789
+    font-family: "Lato Light"
+    font-weight: 300
+    letter-spacing: 1.8px
+  h2
+    line-height: 34px
+    font-size: 24px
+    font-family: Lato
+    color: #848789
+    padding: 0 10px
+
+@media (max-width:768px)
+  #twitter
+    img
+      margin: 50px auto 0
+    h2
+      font-size: 16px
+      line-height: 28px
+@media (max-width:425px)
+  #twitter
+    h2
+      font-size: 14px
+      line-height: 24px
+
+
+
+#qq
+  height: 20vh
+
+
+// // Style for "AOD New Yo"
+// width: 297px
+// height: 16px
+// color: #353738
+// font-family: Lato
+// font-size: 18px
+// font-weight: 700
+// // Text style for "AOD New Yo"
+// font-family: "Lato - Bold"
+// font-weight: 700
+// letter-spacing: 1.8px
+// // Text style for ""
+// font-family: "Myriad Pro"
+// font-weight: 400
+// letter-spacing: 1.8px
+// // Text style for "/, 35 min"
+// color: #848789
+// font-family: "Lato Light"
+// font-weight: 300
+// letter-spacing: 1.8px
 
 
 
